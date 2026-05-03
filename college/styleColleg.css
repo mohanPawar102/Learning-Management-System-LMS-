@@ -1,0 +1,541 @@
+ body {
+   font-family: 'Poppins', sans-serif;
+   background: #f7f9fc;
+   margin: 0;
+   scroll-behavior: smooth;
+ }
+
+ .profile img {
+   margin: 15px auto;
+   display: block;
+   width: 120px;
+   height: 100px;
+   border: 8px solid #2c2f3f;
+   cursor: pointer;
+ }
+
+ .profile h1 {
+   font-size: 24px;
+   margin: 0;
+   padding: 0;
+   font-weight: 600;
+   -moz-text-align-last: center;
+   text-align-last: center;
+   font-family: "Poppins", sans-serif;
+ }
+
+ .profile h1 a,
+ .profile h1 a:hover {
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .profile .social-links a {
+   font-size: 18px;
+   display: inline-block;
+   background: #212431;
+   color: #fff;
+   line-height: 1;
+   padding: 8px 0;
+   margin-right: 4px;
+   border-radius: 50%;
+   text-align: center;
+   width: 36px;
+   height: 36px;
+   transition: 0.3s;
+ }
+
+ .profile .social-links a:hover {
+   background: #149ddd;
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ /* Hero section with overlay */
+ .hero {
+   position: relative;
+   background-image: url('image/college_logo.jpg');
+   background-size: cover;
+   background-position: center;
+   color: #fff;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 0px;
+   overflow: hidden;
+ }
+
+ .hero::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   z-index: 0;
+ }
+
+ .hero>div {
+   position: relative;
+   z-index: 1;
+ }
+
+ .hero h1 {
+   font-size: 48px;
+   margin-bottom: 15px;
+ }
+
+ .hero p {
+   font-size: 20px;
+ }
+
+ /* Section styles */
+ .section {
+   padding: 40px 20px;
+   opacity: 0;
+   transform: translateY(20px);
+   transition: all 0.6s ease-out;
+ }
+
+ .section.visible {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+ .section h2 {
+   margin-bottom: 20px;
+ }
+
+ .card {
+   background: #fff;
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+ }
+
+ /* =================== end =============== */
+
+ /* ============== Admission css ============== */
+ .admission-container {
+   width: 100%;
+   max-width: 650px;
+   background: #fff;
+   padding: 40px;
+   border-radius: 15px;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+   animation: fadeIn 0.6s ease-in-out;
+   margin: auto;
+ }
+
+ @keyframes fadeIn {
+   from {
+     opacity: 0;
+     transform: translateY(20px);
+   }
+
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
+ .admission-container h2 {
+   text-align: center;
+   margin-bottom: 25px;
+   color: #2c3e50;
+   font-weight: bold;
+ }
+
+ .form-label {
+   font-weight: 500;
+ }
+
+ .btn-submit {
+   background: #2193b0;
+   color: #fff;
+   font-weight: bold;
+   width: 100%;
+   padding: 12px;
+   border-radius: 8px;
+   transition: 0.3s;
+   margin-top: 10px;
+   border: none;
+ }
+
+ .btn-submit:hover {
+   background: #176d80;
+ }
+
+ .btn-list {
+   display: block;
+   width: 100%;
+   text-align: center;
+   margin-top: 15px;
+   padding: 10px;
+   background: #34495e;
+   color: #fff;
+   border-radius: 8px;
+   text-decoration: none;
+   transition: 0.3s;
+ }
+
+ .btn-list:hover {
+   background: #2c3e50;
+   color: #f1f1f1;
+ }
+
+ /* ============== admission end ================== */
+
+ /* ============== table list format css ============= */
+ table {
+   border-collapse: collapse;
+   width: 100%;
+ }
+
+.table-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.table th {
+  background: #00bcd4;
+  color: #fff;
+  text-align: center;
+}
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+ th,
+ td {
+   border: 1px solid #ccc;
+   padding: 8px;
+   text-align: center;
+ }
+
+ th {
+   background: #eee;
+ }
+
+ .btn {
+   padding: 5px 10px;
+   text-decoration: none;
+   border-radius: 4px;
+ }
+
+ .btn-info {
+   background: blue;
+   color: white;
+ }
+
+ .btn-warning {
+   background: orange;
+   color: white;
+ }
+
+ .btn-danger {
+   background: red;
+   color: white;
+ }
+ 
+.table th, .table td {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    margin-right: 5px;
+}
+
+ /* =============== table format end =============== */
+
+/* ============= recipt css ============= */
+.sidebar {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background: #222;
+  padding: 20px 15px;
+  color: #fff;
+  transition: transform 0.3s ease; /* smooth slide */
+  z-index: 999;
+}
+
+.sidebar .profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #00bcd4;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.sidebar nav a:hover {
+  background: #00bcd4;
+  color: #fff;
+}
+
+/* Content section */
+.content {
+  margin-left: 240px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* Mobile view: Sidebar hidden by default */
+@media (max-width: 992px) {
+  .sidebar {
+    transform: translateX(-100%); /* Hide */
+  }
+  .sidebar.open {
+    transform: translateX(0); /* Slide in */
+  }
+  .content {
+    margin-left: 0; /* full width */
+  }
+}
+
+/* Toggle Button */
+.toggle-btn {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@media (max-width: 992px) {
+  .toggle-btn {
+    display: block;
+  }
+}
+
+
+
+/* ========================== recipt css end ================ */
+
+.receipt {
+         background: #fff;
+         border-radius: 12px;
+         box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+         padding: 25px 35px;
+         max-width: 500px;
+         margin: auto;margin-top: 50px;
+      }
+      h2 {
+         text-align: center;
+         color: #2c3e50;
+         margin-bottom: 15px;
+      }
+      .info {
+         margin: 12px 0;
+         font-size: 15px;
+      }
+      .info b {
+         color: #2c3e50;
+      }
+      .summary {
+         margin-top: 20px;
+         border-top: 1px solid #ddd;
+         padding-top: 15px;
+      }
+      .summary p {
+         font-size: 16px;
+         margin: 8px 0;
+      }
+      .paid { color: green; font-weight: bold; }
+      .remaining { color: red; font-weight: bold; }
+      .print-btn {
+         display: block;
+         margin: 20px auto 0;
+         padding: 10px 25px;
+         background: #3498db;
+         color: #fff;
+         border: none;
+         border-radius: 8px;
+         cursor: pointer;
+         font-size: 16px;
+      }
+      .print-btn:hover {
+         background: #2980b9;
+      }
+/* ========================== recipt css end ================ */
+
+/* ======================== range line ============= */
+.card {
+  border-radius: 15px;
+  text-align: center;
+  background: #fff;
+}
+
+.count-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.custom-progress {
+  height: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #e0e0e0;
+  overflow: hidden;
+}
+
+.custom-progress .progress-bar {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+  transition: width 0.6s ease-in-out;
+}
+.progress-bar{
+  background-color: #00bcd4;
+}
+
+ /* =================== Footer CSS ============== */
+ .custom-footer {
+   background-color: #111;
+   color: #eee;
+   padding: 40px 0 20px ;
+   margin-top: 100px;
+   font-family: 'Segoe UI', sans-serif;
+   margin-left: 240px;
+ }
+ 
+/* Mobile view: Sidebar hidden by default */
+@media (max-width: 992px) {
+  .custom-footer {
+    margin-left: 0px;
+  }
+}
+
+ .footer-container {
+   max-width: 1200px;
+   margin: auto;
+   padding: 0 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+ .footer-brand,
+ .footer-links,
+ .footer-contact {
+   flex: 1;
+   min-width: 250px;
+   margin-bottom: 30px;
+ }
+
+ .footer-brand h2 {
+   color: #f3943b;
+   font-weight: bold;
+ }
+
+ .footer-brand p {
+   margin-top: 10px;
+   font-size: 14px;
+   color: #aaa;
+ }
+
+ .footer-links h4,
+ .footer-contact h4 {
+   color: #f3943b;
+   margin-bottom: 15px;
+ }
+
+ .footer-links ul {
+   list-style: none;
+   padding: 0;
+ }
+
+ .footer-links ul li {
+   margin-bottom: 10px;
+ }
+
+ .footer-links ul li a {
+   color: #eee;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+
+ .footer-links ul li a:hover {
+   color: #f3943b;
+ }
+
+ .footer-contact p {
+   font-size: 14px;
+   margin-bottom: 8px;
+ }
+
+ .footer-contact i {
+   margin-right: 8px;
+   color: #f3943b;
+ }
+
+ .social-icons a {
+   display: inline-block;
+   color: #eee;
+   font-size: 18px;
+   margin-right: 10px;
+   transition: color 0.3s;
+ }
+
+ .social-icons a:hover {
+   color: #f3943b;
+ }
+
+ .footer-bottom {
+   text-align: center;
+   border-top: 1px solid #444;
+   padding-top: 15px;
+   font-size: 13px;
+   color: #999;
+ }
+
+ .footer-bottom .highlight {
+   color: #f3943b;
+ }

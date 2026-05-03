@@ -1,0 +1,456 @@
+/* General Reset */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  /* color: #ffda77; */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2951a9, #021530);
+  color: white;
+  line-height: 1.4;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  background-color: transparent;
+}
+
+.profile-box {
+  display: none;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+/* When #profile is targeted in the URL, show it */
+#profile:target {
+  display: block;
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f3943b;
+}
+
+.logo span {
+  color: #ffffff;
+}
+
+.logo strong {
+  color: #f3943b;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f3943b;
+}
+
+.nav-links i {
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 60px;
+  min-height: 80vh;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+  max-width: 80%;
+}
+
+.cta-btn {
+  background-color: #f3943b;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #d67a23;
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+}
+
+/* =============== certificate page  ================= */
+
+
+
+/* ============================== Student Index page imges add =============== */
+.circle-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.circle-gallery .circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.circle-gallery .circle:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.circle-gallery .circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* =====================================
+   Courses Section
+===================================== */
+/* Course Section */
+#course {
+  background-color: #5a5656;
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364);  */
+  color: white;
+  padding: 60px 20px;
+}
+
+.courses-div .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f3943b;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.container.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sub-course {
+  background: #ffffff10;
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ffffff30;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.sub-course:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.course-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.rating {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ffcc00;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.c {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+}
+
+/* ================= Contact css ================= */
+/* Contact Section */
+
+.contact-section {
+  padding: 0px 20px;
+  text-align: center;
+
+}
+
+.contact-section h2 {
+  color: #f3943b;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact-form button {
+  background: #f3943b;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #cf7a24;
+}
+
+
+/* =================== Footer CSS ============== */
+.custom-footer {
+  background-color: #111;
+  color: #eee;
+  padding: 40px 0 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-brand,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.footer-brand h2 {
+  color: #f3943b;
+  font-weight: bold;
+}
+
+.footer-brand p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  color: #f3943b;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #f3943b;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+  color: #f3943b;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: #eee;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f3943b;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #999;
+}
+
+.footer-bottom .highlight {
+  color: #f3943b;
+}
+
+
+/* = === course detail ========= */
+
+.hidden {
+  display: none;
+}
+
+video {
+  width: 50%;
+  max-width: 720px;
+  margin-top: 20px;
+  margin: auto;
+}
+
+#certificateBtn {
+  display: none;
+  width: 90%;
+  padding: 10px;
+  font-size: 15px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: orange;
+  cursor: pointer;
+}
+
+#startTestBtn {
+  display: none;
+  width: 150px;
+  height: 40px;
+  padding: 10px 20px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin: auto;
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+
+#textBtn {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f5f7f6;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: rgb(157, 45, 45);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav a {
+  margin-right: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+/*  ======== course data =============== */
