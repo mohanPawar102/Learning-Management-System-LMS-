@@ -1,21 +1,38 @@
-College AI Chatbot (PHP only)
-============================
+# Learning Management System
 
-Contents:
-- config.php       -> Put your OpenAI API key here
-- chatbot.php      -> Combined UI + backend (no separate JS files)
+## Description
+This is a LMS project built using PHP and MySQL.
 
-How to use:
-1. Copy both files to your web server folder (e.g., /var/www/html/college/).
-2. Open config.php and replace YOUR_OPENAI_API_KEY with your real key from https://platform.openai.com/
-3. Ensure PHP cURL is enabled on your server (php-curl).
-   - On Ubuntu/Debian: sudo apt install php-curl && sudo service apache2 restart
-4. Open browser: http://localhost/college/chatbot.php (change path as needed)
-5. Type a question and press Send.
+## Features
+- User Login (roll base college or student)
+- College only Register , student register and Login 
+- Course time traking system, cource certificate , payment .
+- Student Dashboard
+- Admine Panel 
 
-Notes & Security:
-- Keep your API key secret. Do NOT commit config.php to a public repository.
-- This simple example sends each user message as a single request to OpenAI.
-- For production: add rate-limiting, authentication, input validation, and server-side usage logging.
+## Technologies Used
+- PHP
+- MySQL
+- HTML, CSS, JavaScript
 
-If you want, I can customize the bot's system prompt, add a small FAQ memory, or implement paid access flow using Razorpay.
+## All Screenshots 
+
+![Login](webImages/Login.png)
+![Dashboard](webImages/studen dashboard.png)
+![courses](webImages/courses.png)
+![course detail](webImages/course detail.png)
+![video](webImages/video.png)
+![payment](webImages/payment.png)
+![certificate](webImages/certificate.png)
+![profile](webImages/profile.png)
+![contact](webImages/contact.png)
+
+-- Admin Panel 
+
+![Admin panel](webImages/Admin panel.png)
+![Admin Statistics](webImages/Admin Statistics.png)
+![certificate data](webImages/certificate data.png)
+![Fees resipts data](webImages/Fees resipts data.png)
+![Offline Admission](webImages/Offline Admission.png)
+![Recipt](webImages/Recipt.png)
+![Student list](webImages/Student list.png)
